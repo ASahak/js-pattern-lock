@@ -22,7 +22,7 @@ const COLOR_SCHEME = {
 
 function Grid({ matrix: { x, y }, css, patternLength, mountRoot }) {
   this.styleConfigs = css;
-  this.patternLength = patternLength ?? x * y;
+  this.patternLength = patternLength ? patternLength > x * y ? x * y : patternLength : x * y;
   this.x = x;
   this.y = y;
   this.mountRootNode = mountRoot;
@@ -306,4 +306,4 @@ Grid.prototype = {
   }
 }
 
-module.exports = Grid;
+export default Grid;

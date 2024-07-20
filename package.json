@@ -1,0 +1,28 @@
+{
+  "name": "js-pattern-lock",
+  "version": "1.0.1",
+  "description": "A JavaScript library for implementing Android-style pattern lock screens in web applications.",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASahak/js-pattern-lock.git"
+  },
+  "keywords": [
+    "pattern",
+    "js",
+    "android",
+    "lock",
+    "pattern-lock",
+    "android-lock"
+  ],
+  "author": "ASahak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ASahak/js-pattern-lock/issues"
+  },
+  "homepage": "https://android-lock-pattern.vercel.app/"
+}
