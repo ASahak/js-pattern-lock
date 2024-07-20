@@ -1,0 +1,67 @@
+.main-container {
+    position: relative;
+    border: 1px solid #d3d3d3;
+    border-radius: .5rem;
+}
+
+.line-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.line-wrapper svg line {
+    stroke: var(--vertex-line);
+}
+
+.matrix {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    gap: var(--gaps);
+    position: relative;
+}
+
+.matrix .row {
+    gap: var(--gaps);
+    display: flex;
+    align-items: baseline;
+}
+
+.matrix .row .vertex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--box-size);
+    height: var(--box-size);
+    cursor: pointer;
+    position: relative;
+}
+
+.matrix .row .vertex-wrapper:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.matrix .row .vertex-wrapper.vertex--taken:after {
+    background-color: var(--vertex-around-layer);
+}
+
+.matrix .row .vertex-wrapper .vertex {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--vertex-point);
+}
