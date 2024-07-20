@@ -1,6 +1,6 @@
 {
   "name": "js-pattern-lock",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "A JavaScript library for implementing Android-style pattern lock screens in web applications.",
   "main": "script.js",
   "type": "module",

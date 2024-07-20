@@ -28,7 +28,22 @@ const grid = new Grid({
         }
     }
 })
-grid.init()
+grid.init();
+
+// You can also use reset the state by calling grid.resetState() and getting the current coords: grid.coords;
+
+// If you want you can also listen the pattern snapshots as well
+
+function subscribeChanges(coords, wrongPattern) {
+    if (wrongPattern) {
+      alert('Wrong pattern length');
+      return;
+    }
+    
+   console.log(coords);
+  }
+
+  grid.subscribe(subscribeChanges);
 ```
 # API
 ### Props of Instance
