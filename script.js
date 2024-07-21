@@ -234,6 +234,7 @@ Grid.prototype = {
       this.subcriber?.([...this.coords], true);
     } else {
       this.isOvering = false;
+      this.subcriber?.([...this.coords]);
     }
   },
 
